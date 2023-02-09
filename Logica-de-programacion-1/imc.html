@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Programa IMC</h1>
+    <script>
+
+        function saltarlinea(){
+
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(texto){
+            document.write(texto);
+            saltarlinea();
+        }
+        function calcularimc(peso, altura){
+
+           imc= peso / (altura * altura);
+        //    imprimir("El imc calculado de " + nombre + " es "+ imc)
+            return imc
+        }
+            var imcChristian = calcularimc(88,1.70);
+            var imcMariano = calcularimc(70,1.72);
+
+
+            imprimir("El promedio del indice de masa corporal de Christian y Mariano es " + (imcChristian+ imcMariano)/2)
+         var nombre = prompt("Informe su nombre")
+         var pesoInformado =  prompt( nombre + " Informe su peso");
+         var alturainformada = prompt(nombre + " Informe su altura");
+         var imcInformado = calcularimc(pesoInformado, alturainformada);
+
+         imprimir(nombre + " su indice de masa corporal es de " + imcInformado)
+
+        // calcularimc(71,1.72, "Mariano")
+        // calcularimc(88,1.75, "FelipHectore")
+        // var pesoChristian = 71
+        // var alturaChristian = 1.72
+        // var imcChristian = pesoChristian / (alturaChristian * alturaChristian)
+        // imcChristian = calcularimc(pesoChristian,alturaChristian)
+        
+        // imprimir ("El indice de masa corporal de Christian es " + imcChristian)
+
+
+        // var pesoFelipe = 75
+        // var alturaFelipe = 1.73
+        // var imcFelipe = calcularimc(pesoFelipe, alturaFelipe)
+
+        // imprimir ("El indice de masa corporal de Felipe es " + (imcFelipe))
+    </script>
+
+
+
+
+
+</body>
+</html>
