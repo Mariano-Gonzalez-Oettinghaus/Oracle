@@ -1,0 +1,1697 @@
+[33mcommit db1b088800a1c2f0e6b6ee6f68fc9c543812eee3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mcabecera[m[33m)[m
+Author: Mariano Gonzalez <oettinghaus@hotmail.com>
+Date:   Wed Feb 8 19:52:14 2023 -0600
+
+    Cursos de Oracle
+
+[1mdiff --git a/Creeper.html b/Creeper.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..142ab8b[m
+[1m--- /dev/null[m
+[1m+++ b/Creeper.html[m
+[36m@@ -0,0 +1,18 @@[m
+[32m+[m[32m<canvas width="600" height="400"></canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m[32m    var pantalla = document.querySelector("canvas");[m
+[32m+[m[32m    var pincel = pantalla.getContext("2d");[m
+[32m+[m[32m    //cabeza[m
+[32m+[m[32m    pincel.fillStyle = 'darkgreen';[m
+[32m+[m[32m    pincel.fillRect(200, 50, 350 ,300);[m
+[32m+[m[32m    //ojos[m
+[32m+[m[32m    pincel.fillStyle = 'black';[m
+[32m+[m[32m    pincel.fillRect(250, 110, 90, 90);[m
+[32m+[m[32m    pincel.fillRect(410, 110, 90, 90);[m
+[32m+[m[32m    //nariz[m
+[32m+[m[32m    pincel.fillRect(340, 200, 70, 100);[m
+[32m+[m[32m     //boca[m
+[32m+[m[32m    pincel.fillRect(300, 240, 40, 110);[m
+[32m+[m[32m    pincel.fillRect(410, 240, 40, 110);[m
+[32m+[m[32m</script>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-1/calculo_consumo.html b/Logica-de-programacion-1/calculo_consumo.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..875d3e9[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-1/calculo_consumo.html[m
+[36m@@ -0,0 +1,20 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <h3> Alcohol o gasolina?</h3>[m
+[32m+[m[32m    <script>[m
+[32m+[m[32mvar tanqueGasolina = 40[m
+[32m+[m[32mvar recorrido = 480[m
+[32m+[m[32mvar eficiencia = recorrido/tanqueGasolina[m
+[32m+[m
+[32m+[m[32mdocument.write("La cantidad de kilometros recorridos por cada litro de gasolina es igual a " + eficiencia + "km")[m
+[32m+[m
+[32m+[m[32m</script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-1/diferencia_edades.html b/Logica-de-programacion-1/diferencia_edades.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..383bfa2[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-1/diferencia_edades.html[m
+[36m@@ -0,0 +1,31 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title></title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <h1>Diferencia de edades</h1>[m
+[32m+[m[32m    <script>[m
+[32m+[m[32m    function saltarlinea()  {[m
+[32m+[m[32m        document.write("<br>");[m
+[32m+[m[32m        document.write("<br>");[m
+[32m+[m[32m        document.write("<br>");[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    function imprimir(texto) {[m
+[32m+[m
+[32m+[m[32m        document.write(texto)[m
+[32m+[m[32m         saltarlinea()[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    var miEdad = 34[m
+[32m+[m[32m    var Hermano = 40[m
+[32m+[m
+[32m+[m[32m    imprimir("Nuestra diferencia de edad es " + (Hermano - miEdad))[m
+[32m+[m
+[32m+[m[32m    </script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-1/funciones.html b/Logica-de-programacion-1/funciones.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9bd837d[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-1/funciones.html[m
+[36m@@ -0,0 +1,43 @@[m
+[32m+[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m[32m<h1> Programa</h1>[m
+[32m+[m[32m<script>[m
+[32m+[m
+[32m+[m[32mfunction saltarlinea(){[m
+[32m+[m
+[32m+[m[32m    document.write( "<br>");|[m
+[32m+[m[32m    document.write( "<br>");[m
+[32m+[m[32m    document.write( "<br>");[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mfunction imprimir (texto){[m
+[32m+[m
+[32m+[m[32m    document.write(texto)[m
+[32m+[m[32m    // saltarlinea(); invocar una funcion dentro de otra[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m// se pone una variable como parametro en este caso texto[m
+[32m+[m
+[32m+[m[32mimprimir("soy sexy");[m
+[32m+[m
+[32m+[m[32msaltarlinea();[m
+[32m+[m[32mvar anho = 2023;[m
+[32m+[m[32m// var saltolinea = "<br><br><br>";[m
+[32m+[m
+[32m+[m[32mimprimir("Juan tiene: " + (anho-2000) + " años");[m
+[32m+[m[32msaltarlinea();[m
+[32m+[m[32mimprimir("Pedro tiene: " + (anho-1995) + " años");[m
+[32m+[m[32msaltarlinea();[m
+[32m+[m[32mimprimir("Carlos tiene: " + (anho-2005) + " años");[m
+[32m+[m[32msaltarlinea();[m
+[32m+[m
+[32m+[m[32mvar edadJuan = 23[m
+[32m+[m[32mvar edadPedro = 28[m
+[32m+[m[32mvar edadCarlos = 18[m
+[32m+[m[32mvar promedio = (edadJuan+edadPedro+edadCarlos)/3[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdocument.write("El promedio de las edades de los hombres es " + Math.round(promedio))[m
+[32m+[m
+[32m+[m[32m</script>[m
+[1mdiff --git a/Logica-de-programacion-1/imc.html b/Logica-de-programacion-1/imc.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2ee700b[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-1/imc.html[m
+[36m@@ -0,0 +1,65 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <h1>Programa IMC</h1>[m
+[32m+[m[32m    <script>[m
+[32m+[m
+[32m+[m[32m        function saltarlinea(){[m
+[32m+[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        function imprimir(texto){[m
+[32m+[m[32m            document.write(texto);[m
+[32m+[m[32m            saltarlinea();[m
+[32m+[m[32m        }[m
+[32m+[m[32m        function calcularimc(peso, altura){[m
+[32m+[m
+[32m+[m[32m           imc= peso / (altura * altura);[m
+[32m+[m[32m        //    imprimir("El imc calculado de " + nombre + " es "+ imc)[m
+[32m+[m[32m            return imc[m
+[32m+[m[32m        }[m
+[32m+[m[32m            var imcChristian = calcularimc(88,1.70);[m
+[32m+[m[32m            var imcMariano = calcularimc(70,1.72);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m            imprimir("El promedio del indice de masa corporal de Christian y Mariano es " + (imcChristian+ imcMariano)/2)[m
+[32m+[m[32m         var nombre = prompt("Informe su nombre")[m
+[32m+[m[32m         var pesoInformado =  prompt( nombre + " Informe su peso");[m
+[32m+[m[32m         var alturainformada = prompt(nombre + " Informe su altura");[m
+[32m+[m[32m         var imcInformado = calcularimc(pesoInformado, alturainformada);[m
+[32m+[m
+[32m+[m[32m         imprimir(nombre + " su indice de masa corporal es de " + imcInformado)[m
+[32m+[m
+[32m+[m[32m        // calcularimc(71,1.72, "Mariano")[m
+[32m+[m[32m        // calcularimc(88,1.75, "FelipHectore")[m
+[32m+[m[32m        // var pesoChristian = 71[m
+[32m+[m[32m        // var alturaChristian = 1.72[m
+[32m+[m[32m        // var imcChristian = pesoChristian / (alturaChristian * alturaChristian)[m
+[32m+[m[32m        // imcChristian = calcularimc(pesoChristian,alturaChristian)[m
+[32m+[m[41m        [m
+[32m+[m[32m        // imprimir ("El indice de masa corporal de Christian es " + imcChristian)[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        // var pesoFelipe = 75[m
+[32m+[m[32m        // var alturaFelipe = 1.73[m
+[32m+[m[32m        // var imcFelipe = calcularimc(pesoFelipe, alturaFelipe)[m
+[32m+[m
+[32m+[m[32m        // imprimir ("El indice de masa corporal de Felipe es " + (imcFelipe))[m
+[32m+[m[32m    </script>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-1/primer_test.html b/Logica-de-programacion-1/primer_test.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..67e95f5[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-1/primer_test.html[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m
+[32m+[m
+[32m+[m[32m<h1>mi primer programa HTML!!</h1>[m
+[32m+[m[32m<br>[m
+[32m+[m[32m<br>[m
+[32m+[m[32m<br>[m
+[32m+[m
+[32m+[m[32mserá esto realmente un programa? descubralo <a href="https://es.wikipedia.org/wiki/HTML">aqui</a>[m
+[32m+[m
+[32m+[m[32m<br>[m
+[32m+[m
+[32m+[m[32mingresa <a href="https://es.wikipedia.org/wiki/JavaScript">aqui</a> para ver un verdadero lenguage de programación[m
+[32m+[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m	[32malert("Esto sí es lenguaje de programación");[m
+[32m+[m[32m</script>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[1mdiff --git a/Logica-de-programacion-1/programa.html b/Logica-de-programacion-1/programa.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4f37ec8[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-1/programa.html[m
+[36m@@ -0,0 +1,55 @@[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m
+[32m+[m[32m<h1>PROGRAMA</h1>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m
+[32m+[m	[32mvar anho = 2025;[m
+[32m+[m
+[32m+[m	[32mdocument.write("Juan tiene: " + (anho-2000) + " años");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m	[32mdocument.write("Pedro tiene: " + (anho-1995) + " años");[m
+[32m+[m[41m	[m
+[32m+[m	[32manho = 2030[m
+[32m+[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m	[32mdocument.write("Carlos tiene: " + (anho-2005) + " años");[m
+[32m+[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m
+[32m+[m	[32manho = 2020[m
+[32m+[m	[32mdocument.write("Jimena tiene: " + (anho-2010) + " años");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m
+[32m+[m	[32mdocument.write("Paola tiene: " + (anho-1995) + " años");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m
+[32m+[m	[32mdocument.write("Laura tiene: " + (anho-2005) + " años");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m
+[32m+[m
+[32m+[m	[32mvar edadJimena = 10;[m
+[32m+[m	[32mvar edadPaola = 25;[m
+[32m+[m	[32mvar edadLaura = 15;[m[41m	[m
+[32m+[m
+[32m+[m	[32mvar nombre1 = "Jimena";[m
+[32m+[m	[32mvar nombre2 = "Paola";[m
+[32m+[m	[32mvar nombre3 = "Laura";[m
+[32m+[m
+[32m+[m	[32mpromedio = (edadJimena+edadPaola+edadLaura)/3[m
+[32m+[m
+[32m+[m	[32mdocument.write("El promedio de las edades de " + nombre1 + ", " + nombre2 + " y " + nombre3 + " es: " + Math.round(promedio));[m
+[32m+[m	[32mdocument.write("<br>");[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</script>[m
+[32m+[m
+[32m+[m
+[1mdiff --git a/Logica-de-programacion-1/programa2.html b/Logica-de-programacion-1/programa2.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f53fd68[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-1/programa2.html[m
+[36m@@ -0,0 +1,33 @@[m
+[32m+[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m
+[32m+[m[32mfunction saltarlinea(){[m
+[32m+[m
+[32m+[m[32m    document.write(<br>)[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvar anho = 2023;[m
+[32m+[m[32mvar saltolinea = "<br><br><br>";[m
+[32m+[m[32mdocument.write("Juan tiene: " + (anho-2000) + " años");[m
+[32m+[m
+[32m+[m[32msaltarlinea()[m
+[32m+[m
+[32m+[m[32msaltarlinea()[m
+[32m+[m[32mdocument.write("Pedro tiene: " + (anho-1995) + " años");[m
+[32m+[m[32msaltarlinea()[m
+[32m+[m[32mdocument.write("Carlos tiene: " + (anho-2005) + " años");[m
+[32m+[m[32msaltarlinea()[m
+[32m+[m
+[32m+[m[32mvar edadJuan = 23[m
+[32m+[m[32mvar edadPedro = 28[m
+[32m+[m[32mvar edadCarlos = 18[m
+[32m+[m[32mvar promedio = (edadJuan+edadPedro+edadCarlos)/3[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdocument.write("El promedio de las edades de los hombres es " + Math.round(promedio))[m
+[32m+[m
+[32m+[m[32m</script>[m
+[1mdiff --git a/Logica-de-programacion-2/Array.html b/Logica-de-programacion-2/Array.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..20fe0e7[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/Array.html[m
+[36m@@ -0,0 +1,58 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="es">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Juego secreto</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m<input/>[m
+[32m+[m[32m<button> Verificar si acerto con el secreto</button>[m
+[32m+[m
+[32m+[m[32m    <script>[m
+[32m+[m[32m        // var secreto = Math.round(Math.random()*10);[m
+[32m+[m[32m        var secretos = [3,5,7,9];[m
+[32m+[m[41m       [m
+[32m+[m
+[32m+[m
+[32m+[m[32m        var input = document.querySelector("input");[m
+[32m+[m[32m        input.focus();[m
+[32m+[m
+[32m+[m[32m        function verificar(){[m
+[32m+[m[32m            var encontrado = false;[m
+[32m+[m
+[32m+[m[32m            for(var posicion = 0; posicion <= secretos.length; posicion++){[m
+[32m+[m
+[32m+[m[32m                if (parseInt(input.value)  == secretos[posicion]){[m
+[32m+[m
+[32m+[m[32m                alert("Usted acerto")[m
+[32m+[m[32m                encontrado = true;[m
+[32m+[m[32m                break;[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[32m           }[m
+[32m+[m[32m                if (encontrado == false){[m
+[32m+[m
+[32m+[m[32m                    alert("Usted fallo")[m
+[32m+[m[32m                    }[m
+[32m+[m[41m                    [m
+[32m+[m
+[32m+[m[41m             [m
+[32m+[m
+[32m+[m[32m                input.value = "";[m
+[32m+[m[32m                input.focus();[m
+[32m+[m
+[32m+[m[32m            }[m
+[32m+[m[41m                [m
+[32m+[m[32m                var button = document.querySelector("button");[m
+[32m+[m[32m                button.onclick = verificar;[m
+[32m+[m
+[32m+[m[41m            [m
+[32m+[m[41m           [m
+[32m+[m[32m    </script>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/Estrellas.html b/Logica-de-programacion-2/Estrellas.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..91bb843[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/Estrellas.html[m
+[36m@@ -0,0 +1,42 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <h1> Estrellas</h1>[m
+[32m+[m[32m    <script>[m
+[32m+[m
+[32m+[m[32m        function saltarlinea(){[m
+[32m+[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[41m           [m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        function imprimir(texto){[m
+[32m+[m[32m            document.write(texto);[m
+[32m+[m[41m           [m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        for(var lineas = 1; lineas <= 3; lineas ++){[m
+[32m+[m
+[32m+[m[32m            for (var columnas = 1; columnas <=10; columnas++){[m
+[32m+[m[32m                imprimir("*")[m
+[32m+[m
+[32m+[m[32m            }[m
+[32m+[m[41m            [m
+[32m+[m[32m            saltarlinea();[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m</script>[m
+[32m+[m
+[32m+[m[41m     [m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/MediaEdades.html b/Logica-de-programacion-2/MediaEdades.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4ad040d[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/MediaEdades.html[m
+[36m@@ -0,0 +1,42 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <h1>Programa calcular el promedio de las edades</h1>[m
+[32m+[m[32m    <script>[m
+[32m+[m
+[32m+[m[32m        function saltarlinea(){[m
+[32m+[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        function imprimir(texto){[m
+[32m+[m[32m            document.write(texto);[m
+[32m+[m[32m            saltarlinea();[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[41m    [m
+[32m+[m[32m   var numeroMiembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia"))[m
+[32m+[m[32m   var contador = 1;[m
+[32m+[m[32m   var totalEdades = 0;[m
+[32m+[m[41m   [m
+[32m+[m[32m    while(contador <= numeroMiembros) {[m
+[32m+[m[32m        edad = parseInt(prompt("Ingrese la edad del familiar"));[m
+[32m+[m[32m        totalEdades = totalEdades + edad;[m
+[32m+[m[32m        contador ++[m
+[32m+[m[41m        [m
+[32m+[m[32m    }[m
+[32m+[m[32m imprimir ("El promedio de las edades es igual a " + totalEdades/numeroMiembros)[m
+[32m+[m[32m    </script>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/Tabla de multiplicar.html b/Logica-de-programacion-2/Tabla de multiplicar.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a7631bb[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/Tabla de multiplicar.html[m	
+[36m@@ -0,0 +1,46 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <h1>Programa calcular tabla de multiplicar</h1>[m
+[32m+[m[32m    <script>[m
+[32m+[m
+[32m+[m[32m        function saltarlinea(){[m
+[32m+[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        function imprimir(texto){[m
+[32m+[m[32m            document.write(texto);[m
+[32m+[m[32m            saltarlinea();[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[41m        [m
+[32m+[m[32m        var numero = prompt("Ingrese el numero que desea multiplicar hasta 10")[m
+[32m+[m[32m        // var contador = 1[m
+[32m+[m[32m        // while ( contador <= 9){[m
+[32m+[m[41m              [m
+[32m+[m[32m        //     imprimir(numero * contador)[m
+[32m+[m[32m        //     contador = contador + 1[m[41m  [m
+[32m+[m[32m        // }[m
+[32m+[m[32m        for (var contador = 1; contador <= 9; contador++ ){[m
+[32m+[m[32m            imprimir(numero * contador)[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m    </script>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/Uveg.html b/Logica-de-programacion-2/Uveg.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7f8ab95[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/Uveg.html[m
+[36m@@ -0,0 +1,36 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <h1>SUMA DE TRES NUMEROS</h1>[m
+[32m+[m[32m    <script>[m
+[32m+[m[32m        var a = parseInt(prompt("Ingrese el primer Numero"));[m
+[32m+[m[32m        var b = parseInt(prompt("Ingrese el segundo Numero"));[m
+[32m+[m[32m        var c = parseInt(prompt("Ingrese el tercer Numero"));[m
+[32m+[m[32m        var suma = a + b + c[m
+[32m+[m[41m       [m
+[32m+[m
+[32m+[m[32m        if (suma %2==0){[m
+[32m+[m[32m            document.write("El numero " + suma + " es par")[m
+[32m+[m[32m            console.log("El numero " + suma + " es par")[m
+[32m+[m[32m            alert("El numero " + suma + " es par")[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        else{[m
+[32m+[m
+[32m+[m[32m            document.write("El numero " + suma + " es impar")[m
+[32m+[m[32m            console.log("El numero " + suma + " es impar")[m
+[32m+[m[32m            alert("El numero " + suma + " es impar")[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m
+[32m+[m[41m       [m
+[32m+[m[32m            </script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/adivinacion.html b/Logica-de-programacion-2/adivinacion.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b0070e6[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/adivinacion.html[m
+[36m@@ -0,0 +1,60 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <h1>Juego de Adivinacion</h1>[m
+[32m+[m[32m    <script>[m
+[32m+[m
+[32m+[m[32m        function saltarlinea(){[m
+[32m+[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        function imprimir(texto){[m
+[32m+[m[32m            document.write(texto);[m
+[32m+[m[32m            saltarlinea();[m
+[32m+[m[32m        }[m
+[32m+[m[32m     var numeroPensado = Math.round(Math.random()*10);[m
+[32m+[m[32m     var intentos = 3[m
+[32m+[m[32m     var contador = 1[m
+[32m+[m[41m     [m
+[32m+[m
+[32m+[m
+[32m+[m[32m     while(contador <= intentos){[m
+[32m+[m
+[32m+[m[32m        var numeroLanzado = parseInt(prompt ("Ingrese un numero entre 0-10"))[m
+[32m+[m[32m        var intento = contador[m
+[32m+[m[32m        if (numeroPensado == numeroLanzado){[m
+[32m+[m
+[32m+[m[32m        alert("Usted ha acertado en el intento " + intento + " El numero pensado era " + numeroPensado);[m
+[32m+[m[32m        break;[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[32m        else[m
+[32m+[m[32m        {[m
+[32m+[m[41m    [m
+[32m+[m[32m            alert("Usted ha fallado");[m
+[32m+[m[32m        }[m
+[32m+[m[41m        [m
+[32m+[m[32m        if (contador == intentos)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            alert("El numero pensado era " + numeroPensado)[m
+[32m+[m[32m        }[m
+[32m+[m[32m        contador++;[m
+[32m+[m[32m    }[m
+[32m+[m[32m</script>[m
+[32m+[m
+[32m+[m[41m     [m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/football.html b/Logica-de-programacion-2/football.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1f4a1c0[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/football.html[m
+[36m@@ -0,0 +1,51 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <h1>Programa para calcular los puntos de un equipo de football</h1>[m
+[32m+[m[32m    <script>[m
+[32m+[m
+[32m+[m[32m        function saltarlinea(){[m
+[32m+[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        function imprimir(texto){[m
+[32m+[m[32m            document.write(texto);[m
+[32m+[m[32m            saltarlinea();[m
+[32m+[m[32m        }[m
+[32m+[m[41m        [m
+[32m+[m[32m            var victorias = prompt("Informe la cantidad de victorias");[m
+[32m+[m[32m            var empates = parseInt(prompt("Informe la cantidad de empates"));[m
+[32m+[m
+[32m+[m[32m            var puntosTotal = (victorias * 3) + empates;[m
+[32m+[m
+[32m+[m[32m            imprimir("El total de puntos del equipo es: " + puntosTotal)[m
+[32m+[m[41m            [m
+[32m+[m[32m        if (puntosTotal > 28){[m
+[32m+[m[32m            imprimir("El equipo esta mejor que el año pasado")[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        if (puntosTotal < 28) {[m
+[32m+[m[32m            imprimir("El equipo esta peor que el año pasado")[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m[41m            [m
+[32m+[m[32m        if (puntosTotal == 28) {[m
+[32m+[m
+[32m+[m[32m            imprimir("El equipo esta igual que el año pasado")[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[41m        [m
+[32m+[m[32m            </script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/imc.html b/Logica-de-programacion-2/imc.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3843b51[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/imc.html[m
+[36m@@ -0,0 +1,74 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <h1>Programa IMC</h1>[m
+[32m+[m[32m    <script>[m
+[32m+[m
+[32m+[m[32m        function saltarlinea(){[m
+[32m+[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        function imprimir(texto){[m
+[32m+[m[32m            document.write(texto);[m
+[32m+[m[32m            saltarlinea();[m
+[32m+[m[32m        }[m
+[32m+[m[32m        function calcularimc(peso, altura){[m
+[32m+[m
+[32m+[m[32m           imc= peso / (altura * altura);[m
+[32m+[m[32m        //    imprimir("El imc calculado de " + nombre + " es "+ imc)[m
+[32m+[m[32m            return imc[m
+[32m+[m[32m        }[m
+[32m+[m[32m            var imcChristian = calcularimc(88,1.70);[m
+[32m+[m[32m            var imcMariano = calcularimc(70,1.72);[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m         var nombre = prompt("Informe su nombre");[m
+[32m+[m[32m         var pesoInformado =  prompt( nombre + " Informe su peso");[m
+[32m+[m[32m         var alturainformada = prompt(nombre + " Informe su altura");[m
+[32m+[m[32m         var imcInformado = calcularimc(pesoInformado, alturainformada);[m
+[32m+[m
+[32m+[m[32m         imprimir(nombre + " su indice de masa corporal es de " + imcInformado)[m
+[32m+[m
+[32m+[m
+[32m+[m[32m         if (imcInformado <= 18.5){[m
+[32m+[m[32m            imprimir("Abajo de lo recomendado");[m
+[32m+[m
+[32m+[m[32m         }[m
+[32m+[m[32m         if (imcInformado >= 18.5){[m
+[32m+[m
+[32m+[m[32m            if (imcInformado < 25){[m
+[32m+[m[32m            imprimir("IMC esta dentro del intervalo normal");[m
+[32m+[m
+[32m+[m[32m         }[m
+[32m+[m[32m        }[m
+[32m+[m[32m         if (imcInformado >= 30){[m
+[32m+[m[32m            imprimir("IMC considerado obesidad");[m
+[32m+[m
+[32m+[m[32m         }[m
+[32m+[m[41m       [m
+[32m+[m[32m         if (imcInformado >= 25){[m
+[32m+[m
+[32m+[m[32m            if (imcInformado < 30)[m
+[32m+[m[32m            imprimir("Su Imc es considerado Sobrepeso");[m
+[32m+[m
+[32m+[m[32m         }[m
+[32m+[m
+[32m+[m[32m    </script>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/iniciosSesion.html b/Logica-de-programacion-2/iniciosSesion.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d163696[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/iniciosSesion.html[m
+[36m@@ -0,0 +1,26 @@[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m[32m<script>[m
+[32m+[m
+[32m+[m[32m    var inicioDeSesionRegistrado = "alura";[m
+[32m+[m[32m    var contrasenhaRegistrada = "alura321";[m
+[32m+[m
+[32m+[m[41m    [m
+[32m+[m[32m    var maximoIntentos = 3;[m
+[32m+[m[32m    var intento = 1;[m
+[32m+[m
+[32m+[m[41m   [m
+[32m+[m[32m    while(intento <= maximoIntentos){[m
+[32m+[m[32m    var inicioDeSesionIngresado = prompt("Ingrese su usuario");[m
+[32m+[m[32m    var contrasenhaIngresada = prompt("Ingrese su contraseña");[m
+[32m+[m[41m        [m
+[32m+[m[32m        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {[m
+[32m+[m[32m        alert("Bienvenido al sistema " + inicioDeSesionIngresado);[m
+[32m+[m[32m    } else {[m
+[32m+[m[32m        alert("inicio de sesión inválido. Favor intente de nuevo");[m
+[32m+[m[41m        [m
+[32m+[m[32m    }[m
+[32m+[m[32m   intento++[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m</script>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/juegosecreto.html b/Logica-de-programacion-2/juegosecreto.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2f08eaf[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/juegosecreto.html[m
+[36m@@ -0,0 +1,40 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="es">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Juego secreto</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m<input/>[m
+[32m+[m[32m<button> Verificar si acerto con el secreto</button>[m
+[32m+[m
+[32m+[m[32m    <script>[m
+[32m+[m[32m        var secreto = Math.round(Math.random()*10);[m
+[32m+[m[32m        var input = document.querySelector("input");[m
+[32m+[m[32m        input.focus();[m
+[32m+[m[32m        function verificar(){[m
+[32m+[m[32m            if (parseInt(input.value)  == secreto){[m
+[32m+[m
+[32m+[m[32m        alert("Usted acerto")[m
+[32m+[m
+[32m+[m[32m         }[m
+[32m+[m
+[32m+[m[32m        else{[m
+[32m+[m[32m        alert("Usted falló el numero secreto era " + secreto)[m
+[32m+[m[32m         }[m
+[32m+[m
+[32m+[m[32m         input.value = "";[m
+[32m+[m[32m         input.focus();[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m        var button = document.querySelector("button");[m
+[32m+[m[32m        button.onclick = verificar;[m
+[32m+[m[32m    </script>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/juegosecretov2.html b/Logica-de-programacion-2/juegosecretov2.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0a4a810[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/juegosecretov2.html[m
+[36m@@ -0,0 +1,93 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="es">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Juego secreto</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m<input/>[m
+[32m+[m[32m<button> Verificar si acerto con el secreto</button>[m
+[32m+[m
+[32m+[m[32m    <script>[m
+[32m+[m[32m        function aleatorio(){[m
+[32m+[m
+[32m+[m[32m            return Math.round(Math.random()*10)[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        function sortearNumero(cantidad){[m
+[32m+[m[32m            var secretos = [][m
+[32m+[m[32m            var contador = 1;[m
+[32m+[m
+[32m+[m[32m            while (contador <= cantidad){[m
+[32m+[m[32m              var  numeroAleatorio = aleatorio()[m
+[32m+[m[32m              var encontrado = false[m
+[32m+[m[32m              if(numeroAleatorio != 0){[m
+[32m+[m[32m                //el for es para validar que ningun valor aleatorio en nuestro arreglo se repita[m
+[32m+[m[32m                    for(var posicion = 0; posicion < secretos.length; posicion++){[m
+[32m+[m
+[32m+[m[32m                        if (numeroAleatorio == secretos[posicion]){[m
+[32m+[m[32m                        encontrado = true[m
+[32m+[m[32m                        break[m
+[32m+[m
+[32m+[m[32m                }[m
+[32m+[m[32m            }[m
+[32m+[m[41m        [m
+[32m+[m
+[32m+[m[32m                if (encontrado == false){[m
+[32m+[m[32m                secretos.push(numeroAleatorio)[m
+[32m+[m[32m                contador++[m
+[32m+[m[32m                }[m
+[32m+[m
+[32m+[m[41m           [m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[41m              [m
+[32m+[m[41m             [m
+[32m+[m
+[32m+[m[32m            }[m
+[32m+[m[32m            return secretos[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        // var secreto = Math.round(Math.random()*10);[m
+[32m+[m[32m        var secreto =sortearNumero(4)[m
+[32m+[m[32m        console.log(secreto)[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        var input = document.querySelector("input");[m
+[32m+[m[32m        input.focus();[m
+[32m+[m[32m        var interruptor = false;[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        function verificar(){[m
+[32m+[m[41m            [m
+[32m+[m
+[32m+[m[32m            for(var posicion = 0; posicion <= secreto.length; posicion++){[m
+[32m+[m[32m            if (parseInt(input.value)  == secreto[posicion]){[m
+[32m+[m[41m            [m
+[32m+[m[32m        alert("Usted acerto")[m
+[32m+[m[32m        interruptor = true;[m
+[32m+[m[32m        break;[m
+[32m+[m[32m         }[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        if (interruptor == false){[m
+[32m+[m[32m        alert('Usted falló ')[m
+[32m+[m[32m         }[m
+[32m+[m[41m        [m
+[32m+[m[32m         input.value = "";[m
+[32m+[m[32m         input.focus();[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m        var button = document.querySelector("button");[m
+[32m+[m[32m        button.onclick = verificar;[m
+[32m+[m[32m    </script>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/mundial.html b/Logica-de-programacion-2/mundial.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8f7f9ff[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/mundial.html[m
+[36m@@ -0,0 +1,44 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <h1>Programa año mundial de la FIFA</h1>[m
+[32m+[m[32m    <script>[m
+[32m+[m
+[32m+[m[32m        function saltarlinea(){[m
+[32m+[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        function imprimir(texto){[m
+[32m+[m[32m            document.write(texto);[m
+[32m+[m[32m            saltarlinea();[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        var anhoMundial = 1930;[m
+[32m+[m[32m        var limite = parseInt(prompt("Ingrese el año para calcular"))[m
+[32m+[m[41m        [m
+[32m+[m
+[32m+[m
+[32m+[m[32m        while(anhoMundial <= limite){[m
+[32m+[m[32m            anhoMundial = anhoMundial + 4[m
+[32m+[m[32m            imprimir("Hubo mundial de la FIFA en el año " + anhoMundial);[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m[32m        imprimir("FIN");[m
+[32m+[m[32m    </script>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/pares.html b/Logica-de-programacion-2/pares.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1c34869[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/pares.html[m
+[36m@@ -0,0 +1,42 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <h1>Pares del 1 al 100</h1>[m
+[32m+[m[32m    <script>[m
+[32m+[m
+[32m+[m[32m        function saltarlinea(){[m
+[32m+[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m            document.write("<br>");[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        function imprimir(texto){[m
+[32m+[m[32m            document.write(texto);[m
+[32m+[m[32m            saltarlinea();[m
+[32m+[m[32m        }[m
+[32m+[m[41m [m
+[32m+[m
+[32m+[m[32m       var contador = 2;[m
+[32m+[m[32m        while(contador <= 100)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            imprimir(contador);[m
+[32m+[m[32m            contador = contador+2[m
+[32m+[m[41m            [m
+[32m+[m[32m        }[m
+[32m+[m[41m       [m
+[32m+[m[32m    </script>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/recetas.html b/Logica-de-programacion-2/recetas.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..63f71c7[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/recetas.html[m
+[36m@@ -0,0 +1,42 @@[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m
+[32m+[m[32m<h1>Recetas de Armando</h1>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m
+[32m+[m[32m    var ingredientes = [];[m
+[32m+[m[32m    var cantidad = parseInt(prompt("¿Cuántos ingredientes vas a añadir?"));[m
+[32m+[m[32m    var contador = 1;[m
+[32m+[m
+[32m+[m[32m    while( contador <= cantidad) {[m
+[32m+[m[32m        var ingrediente = prompt("Informe el ingrediente " + contador);[m
+[32m+[m[32m        var encontrado = false[m
+[32m+[m
+[32m+[m[32m        for(var posicion = 0; posicion < ingredientes.length; posicion++){[m
+[32m+[m[32m            if(ingrediente == ingredientes[posicion]){[m
+[32m+[m[32m            encontrado = true[m
+[32m+[m[32m            alert("repetido " + ingrediente);[m
+[32m+[m[32m            break[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m            if (encontrado == false){[m
+[32m+[m[32m                ingredientes.push(ingrediente);[m
+[32m+[m[32m                contador++;[m
+[32m+[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[41m       [m
+[32m+[m[32m        console.log(ingredientes);[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[41m        [m
+[32m+[m[41m    [m
+[32m+[m
+[32m+[m[32m    console.log(ingredientes);[m
+[32m+[m
+[32m+[m[32m</script>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-2/recetasv2.html b/Logica-de-programacion-2/recetasv2.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3f39a94[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-2/recetasv2.html[m
+[36m@@ -0,0 +1,27 @@[m
+[32m+[m[32m<meta charset="UTF-8">[m
+[32m+[m
+[32m+[m[32m<h1>Recetas de Armando </h1>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m
+[32m+[m[32m  var ingredientes = [];[m
+[32m+[m[32m  var cantidad = parseInt(prompt("¿Cuántos ingredientes vas a añadir?"));[m
+[32m+[m[32m  var contador = 1;[m
+[32m+[m
+[32m+[m[32m  while(contador <= cantidad) {[m
+[32m+[m[32m    var ingrediente = prompt("Informe el ingrediente " + contador);[m
+[32m+[m[32m    var existe = false;[m
+[32m+[m[32m    for(var posicion = 0; posicion < ingredientes.length; posicion++) {[m
+[32m+[m[32m      if(ingredientes[posicion] == ingrediente){[m
+[32m+[m[32m        existe = true;[m
+[32m+[m[32m    alert("repetido " + ingrediente);[m
+[32m+[m[32m        break;[m
+[32m+[m[32m      }[m
+[32m+[m[32m     }[m
+[32m+[m[32m     if(existe == false) {[m
+[32m+[m[32m      ingredientes.push(ingrediente);[m
+[32m+[m[32m      contador++;[m
+[32m+[m[32m     }[m
+[32m+[m[32m   }[m
+[32m+[m[32m   console.log(ingredientes);[m
+[32m+[m[32m</script>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-3/Bandera.html b/Logica-de-programacion-3/Bandera.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4725aab[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-3/Bandera.html[m
+[36m@@ -0,0 +1,46 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="es">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m<canvas width = "600" height="400">[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m[32mvar pantalla = document.querySelector('canvas')[m
+[32m+[m[32mvar pincel = pantalla.getContext("2d")[m
+[32m+[m
+[32m+[m[32mpincel.fillStyle= "lightgrey" //propiedad[m
+[32m+[m[32mpincel.fillRect (0,0,600,400) //funcion[m
+[32m+[m
+[32m+[m[32mpincel.fillStyle= "green"[m
+[32m+[m[32mpincel.fillRect (0,0,200,400)[m
+[32m+[m
+[32m+[m[32mpincel.fillStyle= "red"[m
+[32m+[m[32mpincel.fillRect (400,0,600,400)[m
+[32m+[m
+[32m+[m[32mpincel.fillStyle= "yellow"[m
+[32m+[m[32mpincel.beginPath()[m
+[32m+[m[32mpincel.moveTo(300,200)[m
+[32m+[m[32mpincel.lineTo(200,400)[m
+[32m+[m[32mpincel.lineTo(400,400)[m
+[32m+[m[32mpincel.fill()[m
+[32m+[m
+[32m+[m
+[32m+[m[32mpincel.fillStyle= "blue"[m
+[32m+[m[32mpincel.beginPath()[m
+[32m+[m[32mpincel.arc(300,200,50,0,2*3.14)[m
+[32m+[m[32mpincel.fill()[m
+[32m+[m
+[32m+[m[32m</script>[m
+[32m+[m
+[32m+[m[41m    [m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-3/circulosColores.html b/Logica-de-programacion-3/circulosColores.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4ff73f1[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-3/circulosColores.html[m
+[36m@@ -0,0 +1,33 @@[m
+[32m+[m[32m<canvas width="600" height="400"> </canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m[32m    var pantalla = document.querySelector("canvas");[m
+[32m+[m[32m    var pincel = pantalla.getContext("2d");[m[41m    [m
+[32m+[m[32m    pincel.fillStyle = "grey";[m
+[32m+[m[32m    pincel.fillRect(0,0,600,400);[m[41m [m
+[32m+[m[32m    var colores = ["blue", "red", "green"];[m
+[32m+[m[32m    var indiceColorActual = 0; // comienza con blue[m
+[32m+[m
+[32m+[m[32m    function dibujarCirculo(evento){[m
+[32m+[m[32m        var x = evento.pageX - pantalla.offsetLeft;[m
+[32m+[m[32m        var y = evento.pageY - pantalla.offsetTop;[m[41m    [m
+[32m+[m[32m        pincel.fillStyle = colores[indiceColorActual];[m
+[32m+[m[32m        pincel.beginPath();[m
+[32m+[m[32m        pincel.arc(x,y,10,0,2*3.14);[m
+[32m+[m[32m        pincel.fill();[m
+[32m+[m[32m        console.log(x + "," + y);[m[41m        [m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    pantalla.onclick = dibujarCirculo;[m
+[32m+[m
+[32m+[m[32m    function alterarColor() {[m
+[32m+[m[32m        indiceColorActual++;[m
+[32m+[m[32m        if(indiceColorActual>= colores.length) {[m
+[32m+[m[32m             indiceColorActual = 0; //vuelve para el primer color, blue[m
+[32m+[m[32m        }[m
+[32m+[m[32m        return false; //menú contextual padrón de `canvas` no sea exhibido[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    pantalla.oncontextmenu = alterarColor;[m
+[32m+[m
+[32m+[m[32m</script>[m[41m [m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-3/flor.html b/Logica-de-programacion-3/flor.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..797a4b0[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-3/flor.html[m
+[36m@@ -0,0 +1,33 @@[m
+[32m+[m[32m<canvas width="600" height="400"></canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m
+[32m+[m[32m    var pantalla = document.querySelector("canvas");[m
+[32m+[m[32m    var pincel = pantalla.getContext("2d");[m
+[32m+[m[32m    pincel.fillStyle = "lightgray";[m
+[32m+[m[32m    pincel.fillRect(0, 0, 600, 400);[m
+[32m+[m
+[32m+[m[32m    function dibujarCirculo(x, y, radio, color) {[m
+[32m+[m
+[32m+[m[32m        pincel.fillStyle = color;[m
+[32m+[m[32m        pincel.beginPath();[m
+[32m+[m[32m        pincel.arc(x, y, radio, 0, 2*3.14);[m
+[32m+[m[32m        pincel.fill();[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[41m    [m
+[32m+[m
+[32m+[m[32m    function dibujarFlor (x,y){[m
+[32m+[m
+[32m+[m[32m    dibujarCirculo(x,y, 20, "red")[m
+[32m+[m[32m    dibujarCirculo(x+40,y, 20, "black")[m
+[32m+[m[32m    dibujarCirculo(x-40,y, 20, "orange")[m
+[32m+[m[32m    dibujarCirculo(x,y+40, 20, "darkblue")[m
+[32m+[m[32m    dibujarCirculo(x,y-40, 20, "yellow")[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m[32mdibujarFlor(400,300)[m
+[32m+[m[32mdibujarFlor(200,100)[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</script>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-3/graficoBarras.html b/Logica-de-programacion-3/graficoBarras.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cbce6bd[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-3/graficoBarras.html[m
+[36m@@ -0,0 +1,46 @@[m
+[32m+[m[32m<canvas width="600" height="400"></canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m
+[32m+[m[32m    function dibujarRectangulo(x, y, base, altura, color) {[m
+[32m+[m[32m        var pantalla = document.querySelector("canvas");[m
+[32m+[m[32m        var pincel = pantalla.getContext("2d");[m
+[32m+[m
+[32m+[m[32m        pincel.fillStyle=color;[m
+[32m+[m[32m        pincel.fillRect(x,y, base, altura);[m
+[32m+[m[32m        pincel.strokeStyle="black";[m
+[32m+[m[32m        pincel.strokeRect(x,y, base, altura);[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    function escribirTexto(x , y, texto) {[m
+[32m+[m[32m        var pantalla = document.querySelector("canvas");[m
+[32m+[m[32m        var pincel = pantalla.getContext("2d");[m
+[32m+[m
+[32m+[m[32m        pincel.font="15px Georgia";[m
+[32m+[m[32m        pincel.fillStyle="black";[m
+[32m+[m[32m        pincel.fillText(texto, x, y);[m[41m    [m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    function dibujarBarra(x, y, serie, colores, texto) {[m
+[32m+[m
+[32m+[m[32m        escribirTexto(x, y - 10, texto);[m
+[32m+[m
+[32m+[m[32m        var sumaAltura = 0;[m
+[32m+[m[32m        for (var i = 0; i < serie.length; i++) {[m
+[32m+[m[32m            var altura = serie[i];[m
+[32m+[m[32m            dibujarRectangulo(x, y + sumaAltura, 50, altura, colores[i]);[m
+[32m+[m[32m            sumaAltura = sumaAltura + altura;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    var colores = ["blue","green","yellow", "red","gray"];[m
+[32m+[m[32m    var serie2009 = [6,47,41,3,3];[m
+[32m+[m[32m    var serie2019 = [81,9,3,3,4];[m
+[32m+[m
+[32m+[m[32m    dibujarBarra(50, 50, serie2009, colores, "2009");[m
+[32m+[m[32m    dibujarBarra(150, 50, serie2019, colores, "2019");[m
+[32m+[m
+[32m+[m[32m</script>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[1mdiff --git a/Logica-de-programacion-3/orlando.html b/Logica-de-programacion-3/orlando.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cad71e6[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-3/orlando.html[m
+[36m@@ -0,0 +1,29 @@[m
+[32m+[m[32m<canvas width="600" height="400"> </canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m[32m    var pantalla = document.querySelector("canvas");[m
+[32m+[m[32m    var pincel = pantalla.getContext("2d");[m[41m    [m
+[32m+[m[32m    pincel.fillStyle = "grey";[m
+[32m+[m[32m    pincel.fillRect(0,0,600,400);[m[41m [m
+[32m+[m
+[32m+[m[32m    function mostrarMensaje(evento){[m
+[32m+[m[32m        var x = evento.pageX - pantalla.offsetLeft; //pos x[m
+[32m+[m[32m        var y = evento.pageY - pantalla.offsetTop; //pos y[m
+[32m+[m[32m        var d = new Date(); //crea una variable de tipo date[m
+[32m+[m[32m        var hora = checkTime(d.getHours()) + ":" + checkTime(d.getMinutes()) + ":" + checkTime(d.getSeconds());[m
+[32m+[m[32m        //Verifica si el número de las horas, minutos o segundos, tiene un solo dígito,[m[41m [m
+[32m+[m[32m        //caso positivo le adiciona el cero en la frente para obtener el formato deseado 00:00:00[m
+[32m+[m[32m        function checkTime(i){[m
+[32m+[m[32m            if (i<10){[m
+[32m+[m[32m                i="0" + i;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            return i;[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        alert("La hora es: " + hora + " y las coordenadas son: x=" + x + ", y=" + y);[m
+[32m+[m[32m    }[m
+[32m+[m[32m        pantalla.onclick = mostrarMensaje[m
+[32m+[m
+[32m+[m[32m    // Aquí viene la llamada a la función con el evento onclick[m
+[32m+[m
+[32m+[m[32m</script>[m[41m [m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-3/probarIf.html b/Logica-de-programacion-3/probarIf.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..21892e8[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-3/probarIf.html[m
+[36m@@ -0,0 +1,39 @@[m
+[32m+[m[32m<canvas width="600" height="400"> </canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m
+[32m+[m[32m    var pantalla = document.querySelector("canvas");[m
+[32m+[m[32m    var pincel = pantalla.getContext("2d");[m[41m    [m
+[32m+[m[32m    pincel.fillStyle = "grey";[m
+[32m+[m[32m    pincel.fillRect(0,0,600,400);[m[41m [m
+[32m+[m[32m    var colores = ["blue", "red", "green"][m
+[32m+[m[32m    var contador = 0; //comienza con blue[m
+[32m+[m
+[32m+[m[32m    function dibujarCirculo(evento){[m
+[32m+[m[32m        var x = evento.pageX - pantalla.offsetLeft;[m
+[32m+[m[32m        var y = evento.pageY - pantalla.offsetTop;[m[41m    [m
+[32m+[m[32m        pincel.fillStyle = colores[contador];[m
+[32m+[m[32m        pincel.beginPath();[m
+[32m+[m[32m        pincel.arc(x,y,10,0,2*3.14);[m
+[32m+[m[32m        pincel.fill();[m
+[32m+[m[32m        console.log(x + "," + y);[m[41m        [m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    pantalla.onclick = dibujarCirculo;[m
+[32m+[m
+[32m+[m
+[32m+[m[41m    [m
+[32m+[m[32m    function alterarColor() {[m
+[32m+[m[32m        contador++[m
+[32m+[m[32m        if(contador >= colores.length){[m
+[32m+[m
+[32m+[m[32m            contador = 0[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m[41m        [m
+[32m+[m[32m        return false;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    pantalla.oncontextmenu = alterarColor;[m
+[32m+[m
+[32m+[m[32m</script>[m[41m [m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-3/programa.html b/Logica-de-programacion-3/programa.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2cc5360[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-3/programa.html[m
+[36m@@ -0,0 +1,65 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="es">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m<canvas width = "600" height="400">[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m[32mfunction dibujarCuadradoVerde(x,y){[m
+[32m+[m[32mvar pantalla = document.querySelector('canvas')[m
+[32m+[m[32mvar pincel = pantalla.getContext("2d")[m
+[32m+[m
+[32m+[m[32mpincel.fillStyle= "green"; //propiedad[m
+[32m+[m[32mpincel.fillRect (x,y,50,50); //funcion[m
+[32m+[m[32mpincel.strokeStyle = 'black';[m
+[32m+[m[32mpincel.strokeRect(x,y,50,50);[m
+[32m+[m[41m  [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mfunction dibujarCuadrado(x,y, color){[m
+[32m+[m[32mvar pantalla = document.querySelector('canvas')[m
+[32m+[m[32mvar pincel = pantalla.getContext("2d")[m
+[32m+[m
+[32m+[m[32mpincel.fillStyle= color ; //propiedad[m
+[32m+[m[32mpincel.fillRect (x,y,50,50); //funcion[m
+[32m+[m[32mpincel.strokeStyle = 'black';[m
+[32m+[m[32mpincel.strokeRect(x,y,50,50);[m
+[32m+[m[41m  [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mdibujarCuadrado(0,0,"green")[m
+[32m+[m[32mdibujarCuadrado(50,0,"green")[m
+[32m+[m[32mdibujarCuadrado(100,0,"green")[m
+[32m+[m
+[32m+[m[32m// var x = 0[m
+[32m+[m[32m// while(x < 600){[m
+[32m+[m[32m//     dibujarCuadrado(x,0,"red")[m
+[32m+[m[32m//     dibujarCuadrado(x,50,"yellow")[m
+[32m+[m[32m//     dibujarCuadrado(x,100,"green")[m
+[32m+[m[32m//     x = x + 50;[m
+[32m+[m[32m// }[m
+[32m+[m
+[32m+[m[32mfor (var x = 0; x < 600; x= x + 50){[m
+[32m+[m
+[32m+[m[32m    dibujarCuadrado(x,0,"red")[m
+[32m+[m[32m    dibujarCuadrado(x,50,"yellow")[m
+[32m+[m[32m    dibujarCuadrado(x,100,"green")[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</script>[m
+[32m+[m
+[32m+[m[41m    [m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-3/programa_4.html b/Logica-de-programacion-3/programa_4.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0b7c388[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-3/programa_4.html[m
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32m<canvas width="600" height="400"> </canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m[32m    var pantalla = document.querySelector("canvas");[m
+[32m+[m[32m    var pincel = pantalla.getContext("2d");[m[41m    [m
+[32m+[m[32m    pincel.fillStyle = "grey";[m
+[32m+[m[32m    pincel.fillRect(0,0,600,400);[m[41m [m
+[32m+[m[41m    [m
+[32m+[m
+[32m+[m[32m    function dibujarCirculo(x,y,radio){[m[41m  [m
+[32m+[m[32m        pincel.fillStyle = "blue";[m
+[32m+[m[32m        pincel.beginPath();[m
+[32m+[m[32m        pincel.arc(x,y,radio,0,2*Math.PI);[m
+[32m+[m[32m        pincel.fill();[m[41m        [m
+[32m+[m[32m    }[m[41m [m
+[32m+[m
+[32m+[m[32m    function limpiarPantalla(){[m
+[32m+[m[32m     pincel.clearRect(0,0,600,400)[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    var x = 0[m
+[32m+[m[32m    function actualizarPantalla()[m
+[32m+[m[32m    {[m
+[32m+[m[32m        limpiarPantalla()[m
+[32m+[m[32m        dibujarCirculo(x,20,10)[m
+[32m+[m[32m        x++[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m[32m    setInterval(actualizarPantalla,100)[m
+[32m+[m
+[32m+[m[32m    // for(var x = 20; x < 600; x++)[m
+[32m+[m[32m    // {[m
+[32m+[m[32m    //[m[41m     [m
+[32m+[m[41m        [m
+[32m+[m[32m    // }[m
+[32m+[m[41m [m
+[32m+[m
+[32m+[m[32m</script>[m[41m [m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-3/programa_5.html b/Logica-de-programacion-3/programa_5.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..de30710[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-3/programa_5.html[m
+[36m@@ -0,0 +1,58 @@[m
+[32m+[m[32m<canvas width="600" height="400"> </canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m[32m    var pantalla = document.querySelector("canvas");[m
+[32m+[m[32m    var pincel = pantalla.getContext("2d");[m[41m    [m
+[32m+[m[32m    pincel.fillStyle = "lightgrey";[m
+[32m+[m[32m    pincel.fillRect(0,0,600,400);[m[41m [m
+[32m+[m[32m    var radio = 10[m
+[32m+[m[32m    var xAleatorio[m
+[32m+[m[32m    var yAleatorio[m[41m [m
+[32m+[m[32m    function dibujarCirculo(x,y,radio, color){[m[41m  [m
+[32m+[m[32m        pincel.fillStyle = color;[m
+[32m+[m[32m        pincel.beginPath();[m
+[32m+[m[32m        pincel.arc(x,y,radio,0,2*Math.PI);[m
+[32m+[m[32m        pincel.fill();[m[41m        [m
+[32m+[m[32m    }[m[41m [m
+[32m+[m
+[32m+[m[32m    function limpiarPantalla(){[m
+[32m+[m[32m     pincel.clearRect(0,0,600,400)[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    function disenarObjetivo (x,y){[m
+[32m+[m[32m        dibujarCirculo(x,y,radio + 20, "red")[m
+[32m+[m[32m        dibujarCirculo(x,y,radio + 10, "white")[m
+[32m+[m[32m        dibujarCirculo(x,y,radio, "red")[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32mfunction sortearPocision (maximo){[m
+[32m+[m[32m    return Math.floor(Math.random()*maximo)[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mvar x = 0[m
+[32m+[m[32m    function actualizarPantalla()[m
+[32m+[m[32m    {[m
+[32m+[m[32m        limpiarPantalla()[m
+[32m+[m[32m         xAleatorio = sortearPocision (600)[m
+[32m+[m[32m         yAleatorio =  sortearPocision (400)[m
+[32m+[m[32m        disenarObjetivo (xAleatorio, yAleatorio)[m
+[32m+[m[32m        x++[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m[32m//  disenarObjetivo (xAleatorio, yAleatorio)[m
+[32m+[m[32m    function disparar (evento){[m
+[32m+[m[32m        var x = evento.pageX - pantalla.offsetLeft[m
+[32m+[m[32m        var y = evento.pagey - pantalla.offsetTop[m
+[32m+[m
+[32m+[m[41m     [m
+[32m+[m[32m        alert("Tiro certero")[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m[32m    pantalla.onclick = disparar[m
+[32m+[m
+[32m+[m[32m    setInterval(actualizarPantalla,1000)[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</script>[m[41m [m
+\ No newline at end of file[m
+[1mdiff --git a/Logica-de-programacion-3/programav3.html b/Logica-de-programacion-3/programav3.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c302033[m
+[1m--- /dev/null[m
+[1m+++ b/Logica-de-programacion-3/programav3.html[m
+[36m@@ -0,0 +1,37 @@[m
+[32m+[m
+[32m+[m[32m<canvas width = "600" height="400"></canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m[32m    var pantalla = document.querySelector('canvas')[m
+[32m+[m[32m    var pincel = pantalla.getContext("2d")[m
+[32m+[m
+[32m+[m[32m    pincel.fillStyle= "grey"; //propiedad[m
+[32m+[m[32m    pincel.fillRect (0,0,600,400); //funcion[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    function exhibirAlerta(evento){[m
+[32m+[m[32m        var x = evento.pageX - pantalla.offsetLeft;[m
+[32m+[m[32m        var y = evento.pageY - pantalla.offsetLeft;[m
+[32m+[m[32m        console.log(evento)[m
+[32m+[m[32m        alert(x +','+ y)[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32mfunction dibujarCirculo(evento){[m
+[32m+[m[32m        var x = evento.pageX - pantalla.offsetLeft;[m
+[32m+[m[32m        var y = evento.pageY - pantalla.offsetLeft;[m
+[32m+[m[32m        pincel.fillStyle = "blue"[m
+[32m+[m[32m        pincel.beginPath()[m
+[32m+[m[32m        pincel.arc(x,y,10,0,2*3.14)[m
+[32m+[m[32m        pincel.fill()[m
+[32m+[m[32m        console.log(evento)[m
+[32m+[m[41m        [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m// pantalla.onclick = exhibirAlerta[m
+[32m+[m[32mpantalla.onclick = dibujarCirculo[m
+[32m+[m
+[32m+[m[32m</script>[m
+[32m+[m
+[32m+[m[41m [m
+\ No newline at end of file[m
+[1mdiff --git a/escuadra.html b/escuadra.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f7e848c[m
+[1m--- /dev/null[m
+[1m+++ b/escuadra.html[m
+[36m@@ -0,0 +1,24 @@[m
+[32m+[m
+[32m+[m
+[32m+[m[32m<canvas width="600" height="400"></canvas>[m
+[32m+[m
+[32m+[m[32m<script>[m
+[32m+[m
+[32m+[m[32m    var pantalla = document.querySelector("canvas");[m
+[32m+[m[32m    var pincel = pantalla.getContext("2d");[m
+[32m+[m[32m    pincel.fillStyle='black';[m
+[32m+[m[32m    pincel.beginPath();[m
+[32m+[m[32m    pincel.moveTo(50, 50);[m
+[32m+[m[32m    pincel.lineTo(50, 400);[m
+[32m+[m[32m    pincel.lineTo(400, 400);[m
+[32m+[m[32m    pincel.fill();[m
+[32m+[m
+[32m+[m[32m    pincel.fillStyle='white';[m
+[32m+[m[32m    pincel.beginPath();[m
+[32m+[m[32m    pincel.moveTo(100, 175);[m
+[32m+[m[32m    pincel.lineTo(100, 350);[m
+[32m+[m[32m    pincel.lineTo(275, 350);[m
+[32m+[m[32m    pincel.fill();[m
+[32m+[m
+[32m+[m
+[32m+[m[32m</script>[m
+\ No newline at end of file[m
